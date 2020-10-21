@@ -3,19 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		59E3971EDC192D1FBCD0F208 /* Pods_HappyHour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64DFC57926E42018E05B4DAA /* Pods_HappyHour.framework */; };
 		FAB663ED252E3E91007BE205 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB663EC252E3E91007BE205 /* AppDelegate.swift */; };
 		FAB663EF252E3E91007BE205 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB663EE252E3E91007BE205 /* SceneDelegate.swift */; };
 		FAB663F1252E3E91007BE205 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB663F0252E3E91007BE205 /* ViewController.swift */; };
 		FAB663F4252E3E91007BE205 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB663F2252E3E91007BE205 /* Main.storyboard */; };
 		FAB663F6252E3E94007BE205 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB663F5252E3E94007BE205 /* Assets.xcassets */; };
 		FAB663F9252E3E94007BE205 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB663F7252E3E94007BE205 /* LaunchScreen.storyboard */; };
+		FAB66402252E449F007BE205 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB66401252E449F007BE205 /* MapViewController.swift */; };
+		FAB66411252E72FB007BE205 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB66410252E72FB007BE205 /* InformationViewController.swift */; };
+		FAB66416252E7345007BE205 /* AddEstablishmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB66415252E7345007BE205 /* AddEstablishmentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33703776E66DE1B442F72F8C /* Pods-HappyHour.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyHour.release.xcconfig"; path = "Target Support Files/Pods-HappyHour/Pods-HappyHour.release.xcconfig"; sourceTree = "<group>"; };
+		64DFC57926E42018E05B4DAA /* Pods_HappyHour.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HappyHour.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E136B61BAE3BADC5B9C0ED8E /* Pods-HappyHour.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyHour.debug.xcconfig"; path = "Target Support Files/Pods-HappyHour/Pods-HappyHour.debug.xcconfig"; sourceTree = "<group>"; };
 		FAB663E9252E3E91007BE205 /* HappyHour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyHour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB663EC252E3E91007BE205 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAB663EE252E3E91007BE205 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,9 @@
 		FAB663F5252E3E94007BE205 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAB663F8252E3E94007BE205 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAB663FA252E3E94007BE205 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAB66401252E449F007BE205 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		FAB66410252E72FB007BE205 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
+		FAB66415252E7345007BE205 /* AddEstablishmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEstablishmentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59E3971EDC192D1FBCD0F208 /* Pods_HappyHour.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		51EDC2314FF57738C3643E45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64DFC57926E42018E05B4DAA /* Pods_HappyHour.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		598B836E3E88A7283E43081E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E136B61BAE3BADC5B9C0ED8E /* Pods-HappyHour.debug.xcconfig */,
+				33703776E66DE1B442F72F8C /* Pods-HappyHour.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FAB663E0252E3E91007BE205 = {
 			isa = PBXGroup;
 			children = (
 				FAB663EB252E3E91007BE205 /* HappyHour */,
 				FAB663EA252E3E91007BE205 /* Products */,
+				598B836E3E88A7283E43081E /* Pods */,
+				51EDC2314FF57738C3643E45 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +90,9 @@
 				FAB663EE252E3E91007BE205 /* SceneDelegate.swift */,
 				FAB663F0252E3E91007BE205 /* ViewController.swift */,
 				FAB663F2252E3E91007BE205 /* Main.storyboard */,
+				FAB66410252E72FB007BE205 /* InformationViewController.swift */,
+				FAB66415252E7345007BE205 /* AddEstablishmentViewController.swift */,
+				FAB66401252E449F007BE205 /* MapViewController.swift */,
 				FAB663F5252E3E94007BE205 /* Assets.xcassets */,
 				FAB663F7252E3E94007BE205 /* LaunchScreen.storyboard */,
 				FAB663FA252E3E94007BE205 /* Info.plist */,
@@ -74,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAB663FD252E3E94007BE205 /* Build configuration list for PBXNativeTarget "HappyHour" */;
 			buildPhases = (
+				5DDA3F4B5981EE4C470FF38F /* [CP] Check Pods Manifest.lock */,
 				FAB663E5252E3E91007BE205 /* Sources */,
 				FAB663E6252E3E91007BE205 /* Frameworks */,
 				FAB663E7252E3E91007BE205 /* Resources */,
+				98032EF51FAEF0648E639AD5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +167,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5DDA3F4B5981EE4C470FF38F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HappyHour-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98032EF51FAEF0648E639AD5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HappyHour/Pods-HappyHour-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HappyHour/Pods-HappyHour-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HappyHour/Pods-HappyHour-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FAB663E5252E3E91007BE205 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +217,9 @@
 				FAB663F1252E3E91007BE205 /* ViewController.swift in Sources */,
 				FAB663ED252E3E91007BE205 /* AppDelegate.swift in Sources */,
 				FAB663EF252E3E91007BE205 /* SceneDelegate.swift in Sources */,
+				FAB66402252E449F007BE205 /* MapViewController.swift in Sources */,
+				FAB66416252E7345007BE205 /* AddEstablishmentViewController.swift in Sources */,
+				FAB66411252E72FB007BE205 /* InformationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +363,7 @@
 		};
 		FAB663FE252E3E94007BE205 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E136B61BAE3BADC5B9C0ED8E /* Pods-HappyHour.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +383,7 @@
 		};
 		FAB663FF252E3E94007BE205 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33703776E66DE1B442F72F8C /* Pods-HappyHour.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
