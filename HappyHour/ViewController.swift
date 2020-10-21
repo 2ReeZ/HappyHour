@@ -8,6 +8,7 @@ import RealmSwift
 import UIKit
 import MapKit
 
+//
 class HappyHourListItem: Object {
     @objc dynamic var name: String = ""
     @objc dynamic var address: String = ""
